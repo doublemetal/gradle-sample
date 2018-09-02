@@ -8,3 +8,85 @@
    ███    ███   ███    ███   ███    ███ ███▌    ▄ ███   ▄███   ███    ███         ▄█    ███    ███      ███    ███ ███   ▄███ ███   ███
    ████████▀    ███    ███   ███    █▀  █████▄▄██ ████████▀    ██████████       ▄████████▀    ▄████▀    ████████▀  ████████▀   ▀█████▀
  */
+
+apply plugin : 'java'
+
+// TODO 메이븐 저장소 추가
+//repositories.each {println it.name}
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//repositories.each {println it.name}
+
+
+
+// TODO 두 개의 task 속성 정의에서 메이븐 저장소 추가하는 경우
+//task test1 {
+//    repositories {
+//        mavenCentral()
+//    }
+//}
+//
+//task test2 {
+//    repositories {
+//        mavenCentral()
+//    }
+//}
+//repositories.each {println it.name}
+
+
+
+// TODO 여러 task 속성 정의에서 같은 값을 다루는 경우
+//ext {
+//    springVersion = 777
+//}
+//
+//task test1 {
+//    println project.ext.springVersion
+//    project.ext.springVersion = 123
+//    println project.ext.springVersion
+//}
+//
+//task test2 {
+//    println project.ext.springVersion
+//    project.ext.springVersion = 456
+//    println project.ext.springVersion
+//
+//    doLast {
+//        println project.ext.springVersion
+//    }
+//}
+//
+//task test3 << {
+//    println project.ext.springVersion
+//}
+//
+//println project.ext.springVersion
+
+
+// TODO 여러 task 속성 정의에서 같은 값을 다루는 경우2
+//def springVersion = 777
+//
+//task test1 {
+//    springVersion = 123
+//    println springVersion
+//}
+//
+//task test2 {
+//    springVersion = 456
+//    println springVersion
+//
+//    doLast {
+//        println springVersion
+//    }
+//}
+//
+//task test3 << {
+//    println springVersion
+//}
+//
+//println springVersion
+
+//
