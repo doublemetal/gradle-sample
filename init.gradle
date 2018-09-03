@@ -1,0 +1,26 @@
+println 'Start initialize'
+
+// TODO Gradle Event Listener
+settingsEvaluated {
+    println '1. 설정 스크립트의 평가 후에 호출된다'
+}
+
+projectsLoaded {
+    println '2. 모든 프로젝트가 로드된 후에 호출된다'
+}
+
+beforeProject {
+    println '3. 프로젝트 평가 전에 호출된다'
+}
+
+afterProject {
+    println '4. 프로젝트 평가 후에 호출된다'
+}
+
+projectsEvaluated {
+    println '5. 모든 프로젝트가 평가된 후에 호출된다'
+}
+
+buildFinished {
+    println '6. 빌드가 완료된 후에 호출된다'
+}

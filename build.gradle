@@ -11,14 +11,88 @@
 
 apply plugin : 'java'
 
-// TODO 메이븐 저장소 추가
+// TODO TASK 정의 테스트
+//println 'start'
+//
+//task hello {
+//    println 'hello'
+//}
+//
+//task hello2 << {
+//    println 'hello2'
+//}
+//
+//println 'end'
+
+// TODO 확장 속성(214p, 215p 에도 나옴)
+//ext {
+//    hello = 'geunwoo'
+//    goodbye = 'yolo'
+//    println hello
+//    println ext.goodbye
+//}
+//
+//println ext.hello
+//println project.ext.goodbye
+//
+//task extTest {
+//    ext {
+//        hello = 'yj'
+//    }
+//}
+//
+//println extTest.ext.hello
+//
+//if (extTest.ext.has('hello')) {
+//    println extTest.ext.hello
+//}
+//
+//if (!extTest.ext.hello) {
+//    println extTest.ext.hello
+//}
+
+
+// TODO 스크립트 블록과 도메인 객체 => 메이븐 저장소 추가
+//println 'before'
 //repositories.each {println it.name}
+//println 'after'
 //
 //repositories {
 //    mavenCentral()
 //}
 //
 //repositories.each {println it.name}
+
+// TODO 그루비 방식
+//def closure = {mavenCentral()}
+//this.repositories(closure)
+//repositories.each {println it.name}
+
+
+
+// TODO 태스크 정의 기초
+//task showDescription {
+//    description = '요것이 설명이요'
+//    doLast {
+//        println description
+//    }
+//}
+
+/// Map 형식 사용
+//task showDesc(description: '정훈님') << {
+//    println description
+//}
+//
+//task(showDesc2, description: '신환님') << {
+//    println description
+//}
+
+
+
+
+
+
+
 
 
 
